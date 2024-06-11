@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration page</title>
+    <style>
+        @media screen and(min-width:320px) {
+            body{
+                background-color: aqua;
+             
+            }
+        }
+       body{
+            color:white;
+            padding-top: 5px;
+            font-size: 20px;
+    }
+    form{
+        padding:20px;
+        background-color: rgba(129, 122, 122, 0.459);
+        border-radius: 30px;
+        width:fit-content;
+        color:rgb(81, 206, 64);
+        margin-top: 80px;
+
+    }
+    input{
+        border-radius: 15px;
+        height:20px ;
+
+    }
+    ::placeholder{
+        color:rgb(169, 80, 204);
+    }
+    button{
+        background-color: rgb(18, 19, 18);
+        border-radius: 10px;
+    }
+    </style>
+    </head>
+
+<body>
+    <video src="regvideo.mp4"  autoplay muted loop style="height: 100%; width: 100%; z-index: -1; position: fixed; top: 0px; object-fit: cover;" >
+    </video>
+    <center>
+    <h1>Registration Page</h1>
+    <form action="success.html">
+        User Name:<input type="text" name="uname" placeholder="enter your name"><br><br>
+       Email:<input type="text" name="email" placeholder="enter your email"><br><br>
+       Mobile Number:<input type="text" name="number" placeholder="enter your mobile number"><br><br>
+       Password:<input type="text" name="pass" placeholder="enter your password"><br><br>
+    Confirm Password:<input type="text" name="pass" placeholder="confirm your password"><br><br>
+    <button>
+    <input type="submit">
+    </button>
+    </form>
+    </center>
+</body>
+</html>

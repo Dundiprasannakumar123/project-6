@@ -1,0 +1,58 @@
+<html>
+    <head>
+    <title>contact us</title>
+    <style>
+        h1{
+            color:white;
+        }
+        form{
+            padding: 40px;
+            background-color:rgba(153, 139, 139, 0.705);
+            width: fit-content;
+            border-radius: 20px;
+        }
+        center{
+padding-top: 70px;
+color:rgb(137, 209, 78);
+font-size: 25px;
+        }
+        input{
+            border-radius: 5px;
+            height: 28px;
+        }
+        ::placeholder{
+            color:purple;
+        }
+        textarea{
+            border-radius: 10px;
+            border-color: black;
+        }
+    </style>
+    <script>
+        function myvalidation(){
+var uname = document.myform.username.value;
+             if(uname==null || uname=="") {
+               alert("Name cant be blank")
+               return false;  
+            } 
+            return true;                 
+        }  
+    </script>
+</head>
+<body>
+    <video src="istock1.mp4.mp4"  autoplay muted loop style="height: 100%; width: 100%; z-index: -1; position: fixed; top: 0px; object-fit: cover;" >
+    </video>
+    <center>
+       <h1>Contact us</h1>
+    <form name="myform" action="success.html" onsubmit="return myvalidation(this)">
+    Username:<input type="text" name="uname" placeholder="enter username"><br><br>
+    Email:<input type="text" name="email" placeholder="enter your email"><br><br>
+    Issue:<input type="text" name="textarea" placeholder="enter your issue"><br><br>
+    Give your suggestion:<br>                                                                                                                                                                                                                                                   
+    <textarea  name="suggest" placeholder="your suggestion"></textarea><br><br>
+    <input type="submit" value="submit">
+    </form>
+    </center>
+    </video>
+</body>
+</html>
